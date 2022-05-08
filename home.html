@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home   </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyCbxzJPARJyTJfX6PSrQNgU-TVI2d65nHw",
+          authDomain: "webd---pollgenerator.firebaseapp.com",
+          projectId: "webd---pollgenerator",
+          storageBucket: "webd---pollgenerator.appspot.com",
+          messagingSenderId: "31041709225",
+          appId: "1:31041709225:web:7913dd71536648d3bfb5b8",
+          measurementId: "G-SMQE2FDFWL"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);  
+        const auth = firebase.auth();
+
+    </script>
+
+    <script src="home.js"></script>
+    
+    <!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+  
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+   
+</head>
+<body>
+
+
+
+
+    <nav >
+
+
+        <div class="nav">
+            
+
+        <a href="#"><img src="images/logo22.jpeg" alt="" class="logo"></a>   
+        <ul class="navlist navitem">
+                <!-- <div class="logo navitem"><img src="images/logo.jpg" alt="pollgenerator_logo"></div> -->
+            <li><a class = "aa" href = "askaques.html" >ASK A QUES</a></li>
+            <li><a class = "aa" href = "personalchat.html" >PERSONAL CHAT</a></li>
+            <li><a class = "aa" href = "review.html" >REVIEW</a></li>
+            <li><a class = "aa" href = "borrow.html" >BORROW/SELL</a></li>
+                
+            </ul>
+            <div class="gear navitem"><i class="fa fa-gear"></i></div>
+            <div class="settings navitem"><a href=""><img src="images/settingicon.png" alt=""></a></div>
+        </nav>
+        <button onclick="logout()">logout</button>
+        </div>
+
+
+
+
+
+
+        
+
+</body>
+</html>

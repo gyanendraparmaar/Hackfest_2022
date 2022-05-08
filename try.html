@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POLLGENERATOR </title>
+    
+</head>
+<body>
+
+
+
+       
+    <img src="images/logo22.jpeg" alt="logo" class="logo">
+    <br>
+    <section>
+        <div class = "login1">
+            <div>
+                <h1 id = "log">LOGIN</h1>
+            </div>
+            <form  onsubmit="login()" class="inputs " id="loginform"  >
+
+                <div class="emailholder">
+                    <input type="text"  id = "email" placeholder = "institute email" style = "width: 250px;" required />
+                </div>
+                <div class="passwordholder">
+                    <input type="password" id = "password" placeholder="password"style = "width: 250px;" required />
+                   
+                </div>
+                <small><span id="error" style="color: red;"></span></small> 
+                <div style = "padding-top: 20px;">
+                    <button id = "loginbutton" type="submit">LOGIN</button.>
+                </div>
+            </form>
+
+            <div class="forgotpassword">
+                <a href="forgotpass.html" class="link">forgot password?</a>
+                
+            </div>
+            <p id="or">-----------------------or-----------------------</p>
+            <div style="padding : 5px;justify-content:center;display: flex ;">
+                <button class="google" style="height: 30px;">login using google  
+                    <img src="images/googlelogo.png" style="width: 25px;border-radius: 20px;">
+                </button>
+            </div>
+            <div class="signup">  
+                <p>Don't have an account? <a href="signup.html" id="signup">Signup</a></p>
+                
+            </div>
+                
+            
+        </div>
+    </section>
+
+    
+ 
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyCbxzJPARJyTJfX6PSrQNgU-TVI2d65nHw",
+        authDomain: "webd---pollgenerator.firebaseapp.com",
+        projectId: "webd---pollgenerator",
+        storageBucket: "webd---pollgenerator.appspot.com",
+        messagingSenderId: "31041709225",
+        appId: "1:31041709225:web:7913dd71536648d3bfb5b8",
+        measurementId: "G-SMQE2FDFWL"
+    };
+
+    firebase.initializeApp(firebaseConfig);  
+    const auth = firebase.auth();
+    </script> 
+
+    <script src="index.js"></script>
+
+
+
+
+</body>
+</html>

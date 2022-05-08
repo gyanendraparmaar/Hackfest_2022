@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyCbxzJPARJyTJfX6PSrQNgU-TVI2d65nHw",
+          authDomain: "webd---pollgenerator.firebaseapp.com",
+          projectId: "webd---pollgenerator",
+          storageBucket: "webd---pollgenerator.appspot.com",
+          messagingSenderId: "31041709225",
+          appId: "1:31041709225:web:7913dd71536648d3bfb5b8",
+          measurementId: "G-SMQE2FDFWL"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);  
+        const auth = firebase.auth();
+
+    </script>
+    <!-- <img? src = "images/logo.jpg" id = "circle" width = "200" alt="logo" style="border-radius:50%;"> -->
+    <img src="images/logo22.jpeg" alt="logo" class="logo">
+    <main class="main">
+        <div class="signup">
+            <h1>SIGN UP</h1>
+            <p style="color: rgb(76, 75, 75);">Sign up to make polls and share it with friends</p>
+            <form class="form"  onsubmit="signup()" id = "signupform">
+                <div class="inputholder" >
+                    <input type="text" id="name" class="inputs"  placeholder="Full name"  required />
+                </div>
+                <div class="inputholder">
+                    <input type="text" id ="email" class="inputs" placeholder="Institute email" required />
+                </div>
+                <div class="inputholder">
+                    <input type="number" id ="phonenumber" class="inputs" placeholder="phone number" required />
+                </div>
+                <div class="inputholder">
+                    <input type="password" id ="password" class="inputs" placeholder="password" required />
+                </div>
+                
+                <div style="padding: 15px;">
+                    <button id="button"  type="submit" >SIGN UP </button>
+                </div>
+            </form> 
+            <small><span id="error2" style="color: red;"></span></small>    
+                <div class="signip">
+                    <p>Have an account? <a href="try.html" id="signin" style="text-decoration: none;">SignIn</a></p>
+                    
+                </div>
+                
+            
+        </div>
+    </main>
+    <script src="signup.js"></script>
+
+</body>
+</html>

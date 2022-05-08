@@ -1,0 +1,93 @@
+
+body{
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.login1 {
+    border: 1px solid black;
+    max-width: 20vw;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 30px;
+    margin: auto;
+}
+.logo{
+    padding: 10px;
+}
+
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.emailholder{
+    padding: 10px ;
+}
+.passwordholder{
+     padding: 10px ; 
+ 
+}
+
+
+#circle {
+    border-radius: 50%;   
+}
+#loginbutton{
+    background-color: rgb(0, 166, 255);
+     border: none; 
+     color: white; 
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 35px;
+    width: 250px;
+    opacity: 0.6;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#loginbutton:hover {opacity: 1;}
+
+.link{
+    text-decoration: none;
+}
+
+.link:hover{
+    color: blue;
+}
+
+.forgotpassword{
+    padding-top: 4px;
+}
+
+.google{
+
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgba(212, 207, 207, 0.533);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.google:hover{background-color: rgba(158, 157, 157, 0.533);}
+
+#signup{
+    text-decoration: none;
+}
+
+#signup:hover{
+    color: blue;
+}
+.name{
+    color: blue;
+    padding-left: 20px;
+}

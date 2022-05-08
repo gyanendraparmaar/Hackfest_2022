@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    background-color: white;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    /* border-radius: 30px; */
+
+    overflow-x: hidden;
+}
+
+
+.navlist{
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: right;
+    margin-right: 176px;
+    /* overflow: auto; */
+}
+
+#pollgen{
+    padding: 16px 16px;
+    color : blue;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 12px;
+}
+
+.navlist li{
+    padding-right: 250px;
+    list-style: none ;
+
+    border-radius: 10px;
+}
+
+.navlist li a{
+    text-decoration: none;
+    padding: 10px 33px;
+
+    border-radius: 35px;
+    /* font-weight: bold; */
+    font-size: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+
+.searchbar{
+    width: 450px;
+    border-radius: 15px;
+    height: 30px;
+
+}
+.search{
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+.settings img{
+    height: 47px;
+    width: 48px;
+    border-radius: 50%;
+    margin-right: 17px;
+    margin-top: 3px;
+    border: blue solid;
+}
+
+.navitem{
+    /* justify-content: center; */
+    align-items: center;
+    padding: 8px 16px;
+    /* float: left; */
+}
+
+.gear{
+    margin:16px;
+}
+
+.gear:hover{
+    color: grey;
+
+}
+
+.aa:hover{
+    background-color: rgb(0, 128, 255);
+    color: white;
+}
+
+body{
+    background-color:white;
+}
+.container{
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.logo{
+    height: 57px;
+    margin: 5px;
+    margin-left: 15px;   
+}

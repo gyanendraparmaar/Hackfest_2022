@@ -1,0 +1,38 @@
+You will need to have set up a MongoDB Atlas account and database.
+
+https://www.mongodb.com/docs/atlas/getting-started/
+
+
+Make sure that the cluster has allow listed connections from anywhere.
+
+Create a Heroku new app.
+
+https://dashboard.heroku.com/login
+
+Go to app settings
+
+Add the following environments.
+
+DATABASE_URL (to use your MongoDB connection string)
+JWT_SECRET
+Add Nodejs to buildpacks
+
+  # Go into the repository
+  $ cd letsconnect
+
+  # Heroku Setup
+  $ npm install -g heroku
+  $ heroku login
+  $ heroku git:remote -a your-app-name
+
+  # push subdirectory repository with subtree
+  $ git subtree push --prefix server heroku master
+
+Deploying Client App on Vercel
+https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fsalihozdemir%2Fstackoverflow-clone&env=SITE_NAME&envDescription=SITE_NAME%20needed%20for%20api%20url
+
+Select client directory
+
+Add heroku api url to SITE_NAME enviorement
+
+Finally deploy client application
